@@ -23,7 +23,11 @@ class ViewController: UIViewController {
         let temperature = Double(farenheitLabel.text!)
         let celcius = (temperature! - 32) * (5/9)
         celciusLabel.text = String(celcius)
-        
+    }
+    
+    @IBAction func clearButtonTapped(_ sender: Any) {
+        farenheitLabel.text = ""
+        celciusLabel.text = ""
     }
     
 
